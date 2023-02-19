@@ -1,13 +1,14 @@
 
 
-
 pub mod bubble_sort; // 冒泡排序
+pub mod select_sort; // 选择排序
 
 
 
 #[cfg(test)]
 mod test{
-   use super::*;
+   use crate::sort::bubble_sort::bubble_sort;
+   use crate::sort::select_sort::select_sort;
 
    #[test]
    fn test_empty_vec() { 
@@ -16,6 +17,11 @@ mod test{
     {
         let mut input = origin.clone();
         bubble_sort(&mut input);
+        assert_eq!(input, output);
+    }
+    {
+        let mut input = origin.clone();
+        select_sort(&mut input);
         assert_eq!(input, output);
     }
    }
@@ -29,6 +35,12 @@ mod test{
         bubble_sort(&mut input);
         assert_eq!(input, output);
     }
+    {
+        let mut input = origin.clone();
+        select_sort(&mut input);
+        assert_eq!(input, output);
+    }
+
    }
 
    #[test]
@@ -38,6 +50,12 @@ mod test{
       {
         let mut input = origin.clone();
         bubble_sort(&mut input);
+        assert_eq!(input, output);
+      }
+
+      {
+        let mut input = origin.clone();
+        select_sort(&mut input);
         assert_eq!(input, output);
       }
    }
