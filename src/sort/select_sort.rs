@@ -9,11 +9,11 @@
  3.重复第二步，直到所有元素均排序完毕。
 */ 
 
-// 方案1 ：从首位开始递增，找到最小值，放前面
+// 方案1 ：从首位开始递增，找到最小值，完成数据交换
 pub fn select_sort(nums: &mut [i32]){
    let len = nums.len();
    if len < 1 { return; }
-   
+
    // 总共要经过 N-1 轮比较
    for i in 0..len - 1  {
       let mut min = i; // 最小元素下标
@@ -30,7 +30,7 @@ pub fn select_sort(nums: &mut [i32]){
    }
 }
 
-// 方案2，从最左侧（最大下标处）递减，找出最大值，放左侧
+// 方案2，从最大下标处递减，找出最大值，完成数据交换
 pub fn bubble_sort1(nums: &mut [i32]) {
     let mut left = nums.len() - 1; // 待排序数据下标
     while left > 0 {
