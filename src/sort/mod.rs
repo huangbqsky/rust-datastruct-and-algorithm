@@ -2,6 +2,7 @@
 
 pub mod bubble_sort; // 冒泡排序
 pub mod select_sort; // 选择排序
+pub mod insert_sort; // 插入排序
 
 
 
@@ -9,6 +10,7 @@ pub mod select_sort; // 选择排序
 mod test{
    use crate::sort::bubble_sort::bubble_sort;
    use crate::sort::select_sort::select_sort;
+   use crate::sort::insert_sort::insert_sort;
 
    #[test]
    fn test_empty_vec() { 
@@ -24,21 +26,34 @@ mod test{
         select_sort(&mut input);
         assert_eq!(input, output);
     }
+    {
+      let mut input = origin.clone();
+      insert_sort(&mut input);
+      assert_eq!(input, output);
+    }
    }
 
    #[test]
    fn test_one_element_vec() { 
     let origin = [1];
     let output = [1];
+    // 冒泡排序
     {
         let mut input = origin.clone();
         bubble_sort(&mut input);
         assert_eq!(input, output);
     }
+    // 选择排序
     {
         let mut input = origin.clone();
         select_sort(&mut input);
         assert_eq!(input, output);
+    }
+    // 插入排序
+    {
+      let mut input = origin.clone();
+      insert_sort(&mut input);
+      assert_eq!(input, output);
     }
 
    }
@@ -56,6 +71,12 @@ mod test{
       {
         let mut input = origin.clone();
         select_sort(&mut input);
+        assert_eq!(input, output);
+      }
+
+      {
+        let mut input = origin.clone();
+        insert_sort(&mut input);
         assert_eq!(input, output);
       }
    }
