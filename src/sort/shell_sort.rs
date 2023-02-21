@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 /**
- 希尔排序：
+ 希尔排序：时间复杂度为O(n^2), 空间复杂度为O(1)
  也称递减增量排序算法，是插入排序的一种更高效的改进版本
  希尔排序的基本思想是：先将整个待排序的记录序列分割成为若干子序列分别进行直接插入排序，
  待整个序列中的记录“基本有序”时，再对全体记录进行依次直接插入排序。
@@ -13,6 +13,30 @@
  */
 
  pub fn shell_sort(nums: &mut [i32]) {
+    fn insertion_with_gap(nums: &mut [i32], start: usize, gap: usize) {
+       let mut i = start + gap;
+       while i < nums.len(){
+          let mut pos = i;
+          let curr = nums[pos];
+          while pos >= gap && curr < nums[pos - gap] {
+             nums[pos] = nums[pos - gap];
+             pos -= gap;
+          }
+          nums[pos] = curr; // 找到属于自己的位置，回填值
+          i += gap; // step间隔
+       }
+    } 
+    let mut gap = nums.len() / 2;
+    // 修改间隙
+    while gap > 0 {
+        for start in 0..gap {
+            insertion_with_gap(nums, start, gap);
+        }
+        gap /= 2;
+    }
+}
+
+pub fn shell_sort2(nums: &mut [i32]) {
     fn insertion_with_gap(nums: &mut [i32], start: usize, gap: usize) {
         // 带间隙的插入排序
         for index in ((start + gap)..nums.len()).step_by(gap) {
