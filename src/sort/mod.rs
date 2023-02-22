@@ -1,14 +1,16 @@
 pub mod bubble_sort; // 冒泡排序
 pub mod insert_sort; // 插入排序
-pub mod merge_sort;
+pub mod merge_sort; // 归并排序
+pub mod quick_sort;
 pub mod select_sort; // 选择排序
-pub mod shell_sort; // 希尔排序 // 归并排序
+pub mod shell_sort; // 希尔排序 // 快速排序
 
 #[cfg(test)]
 mod test {
     use crate::sort::bubble_sort::bubble_sort;
     use crate::sort::insert_sort::insert_sort;
     use crate::sort::merge_sort::merge_sort;
+    use crate::sort::quick_sort::quick_sort;
     use crate::sort::select_sort::select_sort;
     use crate::sort::shell_sort::shell_sort;
 
@@ -44,6 +46,12 @@ mod test {
         {
             let mut input = origin.clone();
             merge_sort(&mut input);
+            assert_eq!(input, output);
+        }
+        // 快速排序
+        {
+            let mut input = origin.clone();
+            quick_sort(&mut input);
             assert_eq!(input, output);
         }
     }
@@ -82,6 +90,12 @@ mod test {
             merge_sort(&mut input);
             assert_eq!(input, output);
         }
+        // 快速排序
+        {
+            let mut input = origin.clone();
+            quick_sort(&mut input);
+            assert_eq!(input, output);
+        }
     }
 
     #[test]
@@ -116,6 +130,12 @@ mod test {
         {
             let mut input = origin.clone();
             merge_sort(&mut input);
+            assert_eq!(input, output);
+        }
+        // 快速排序
+        {
+            let mut input = origin.clone();
+            quick_sort(&mut input);
             assert_eq!(input, output);
         }
     }
