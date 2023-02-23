@@ -1,7 +1,7 @@
 pub mod bubble_sort; // 冒泡排序
 pub mod select_sort; // 选择排序
-pub mod shell_sort; // 希尔排序 
 pub mod insert_sort; // 插入排序
+pub mod shell_sort; // 希尔排序 
 pub mod merge_sort; // 归并排序
 pub mod quick_sort; // 快速排序
 pub mod heap_sort; // 堆排序
@@ -9,12 +9,12 @@ pub mod heap_sort; // 堆排序
 #[cfg(test)]
 mod test {
     use crate::sort::bubble_sort::bubble_sort;
-    use crate::sort::heap_sort::heap_sort;
+    use crate::sort::select_sort::select_sort;
     use crate::sort::insert_sort::insert_sort;
+    use crate::sort::shell_sort::shell_sort;
     use crate::sort::merge_sort::merge_sort;
     use crate::sort::quick_sort::quick_sort;
-    use crate::sort::select_sort::select_sort;
-    use crate::sort::shell_sort::shell_sort;
+    use crate::sort::heap_sort::heap_sort;
 
     #[test]
     fn test_empty_vec() {
@@ -32,7 +32,7 @@ mod test {
             select_sort(&mut input);
             assert_eq!(input, output);
         }
-        // 选择排序
+        // 插入排序
         {
             let mut input = origin.clone();
             insert_sort(&mut input);
@@ -122,13 +122,13 @@ mod test {
             bubble_sort(&mut input);
             assert_eq!(input, output);
         }
-
+        // 选择排序
         {
             let mut input = origin.clone();
             select_sort(&mut input);
             assert_eq!(input, output);
         }
-        // 选择排序
+        // 插入排序
         {
             let mut input = origin.clone();
             insert_sort(&mut input);
