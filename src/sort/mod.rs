@@ -1,10 +1,10 @@
 pub mod bubble_sort; // 冒泡排序
-pub mod heap_sort;
+pub mod select_sort; // 选择排序
+pub mod shell_sort; // 希尔排序 
 pub mod insert_sort; // 插入排序
 pub mod merge_sort; // 归并排序
 pub mod quick_sort; // 快速排序
-pub mod select_sort; // 选择排序
-pub mod shell_sort; // 希尔排序 // 堆排序
+pub mod heap_sort; // 堆排序
 
 #[cfg(test)]
 mod test {
