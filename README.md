@@ -1,7 +1,6 @@
-### Description 
+## Description 
 
-Rust-DataStruct-And-Algorithm
-用Rust语言实现常用的数据结构和算法
+Rust-DataStruct-And-Algorithm 用Rust语言实现常用的数据结构和算法
 
 ```dart
 1: git clone https://github.com/huangbqsky/rust-datastruct-and-algorithm.git
