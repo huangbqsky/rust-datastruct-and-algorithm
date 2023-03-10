@@ -1,6 +1,21 @@
-## Description 
+## Rust-DataStruct-And-Algorithm 
 
-Rust-DataStruct-And-Algorithm 用Rust语言实现常用的数据结构和算法
+用Rust语言实现常用的数据结构和算法
+
+算法包含以下内容：
+
+1、冒泡排序
+2、选择排序
+3、插入排序
+4、希尔排序
+5、归并排序
+6、快速排序
+7、堆排序
+8、计数排序
+9、桶排序
+10、基数排序
+
+## 测试
 
 ```dart
 1: git clone https://github.com/huangbqsky/rust-datastruct-and-algorithm.git
@@ -10,7 +25,8 @@ Rust-DataStruct-And-Algorithm 用Rust语言实现常用的数据结构和算法
 ```
 
 
-参考 RustBook
+## 参考 
+RustBook
 https://github.com/QMHTMY/RustBook/tree/main/books
 
 教程 <<Rust语言圣经>>
