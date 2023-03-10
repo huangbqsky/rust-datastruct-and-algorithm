@@ -26,8 +26,9 @@
 
 
 ## 参考 
-RustBook
-https://github.com/QMHTMY/RustBook/tree/main/books
 
-教程 <<Rust语言圣经>>
-https://course.rs/about-book.html
+RustBook：<<Rust数据结构与算法>> https://github.com/QMHTMY/RustBook/tree/main/books
+
+Rust题解：<<Rust算法题解>> https://github.com/huangbqsky/rust-algos
+
+Rust教程：<<Rust语言圣经>> https://course.rs/about-book.html
