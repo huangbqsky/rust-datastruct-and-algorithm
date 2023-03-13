@@ -216,8 +216,8 @@ mod test {
         // 基数排序
         {
             // let mut input = origin.clone();
-            let mut input = [54,32,99,18,75,31,43,56,21,22];
-            let output = [18,21,22,31,32,43,54,56,75,99];
+            let mut input = [54, 32, 99, 18,7 5, 31, 43, 56, 21, 22];
+            let output = [18, 21, 22,31, 32, 43, 54, 56, 75, 99];
             radix_sort(&mut input);
             assert_eq!(input, output);
         }
