@@ -27,8 +27,14 @@
 
 ## 参考 
 
+Rust教程：<<Rust语言圣经>> https://course.rs/about-book.html
+
 RustBook：<<Rust数据结构与算法>> https://github.com/QMHTMY/RustBook/tree/main/books
 
 Rust题解：<<Rust算法题解>> https://github.com/huangbqsky/rust-algos
 
-Rust教程：<<Rust语言圣经>> https://course.rs/about-book.html
+Rust数据结构：《The Algorithms - Rust》 https://github.com/TheAlgorithms/Rust
+
+数据结构和算法必知必会的50个代码实现：https://github.com/wangzheng0822/algo 前Google工程师，《数据结构和算法之美》《设计模式之美》专栏作者
+
+
