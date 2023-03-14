@@ -1,6 +1,6 @@
 ## Rust-DataStruct-And-Algorithm 
 
-用Rust语言实现常用的数据结构和算法
+用 Rust 语言实现常用的数据结构和算法
 
 算法包含以下内容：
 
