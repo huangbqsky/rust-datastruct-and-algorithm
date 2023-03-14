@@ -29,7 +29,7 @@
 
 Rust教程：<<Rust语言圣经>> https://course.rs/about-book.html
 
-Rust教程：<<Rust 程序设计语言>> https://kaisery.github.io/trpl-zh-cn
+Rust教程：<<Rust 程序设计语言>> https://kaisery.github.io/trpl-zh-cn/title-page.html
 
 RustBook：<<Rust数据结构与算法>> https://github.com/QMHTMY/RustBook/tree/main/books
 
