@@ -35,7 +35,7 @@ RustBook：<<Rust数据结构与算法>> https://github.com/QMHTMY/RustBook/tree
 
 Rust数据结构：《The Algorithms - Rust》 https://github.com/TheAlgorithms/Rust
 
-Rust题解：<<Rust算法题解>> https://github.com/huangbqsky/rust-algos 涵盖了各种常用算法和数据结构的代码实现，以及 leetcode 题解，同时对于相关算法还提供了中文文档和注释
+Rust题解：<<Rust算法题解>> https://github.com/rustlang-cn/rust-algos 涵盖了各种常用算法和数据结构的代码实现，以及 leetcode 题解，同时对于相关算法还提供了中文文档和注释
 
 数据结构和算法必知必会的50个代码实现：https://github.com/wangzheng0822/algo 前Google工程师，《数据结构和算法之美》《设计模式之美》专栏作者
 
