@@ -41,4 +41,6 @@ Rust算法博客集：https://learnku.com/blog/godme/archive/2022-7 godme 的博
 
 Rust算法（小争哥） ：https://github.com/wangzheng0822/algo 数据结构和算法必知必会的50个代码实现， 作者是前Google工程师，《数据结构和算法之美》《设计模式之美》专栏作者
 
+LeetCode in Rust：https://github.com/aylei/leetcode-rust 在 LeetCode 上有很多算法问题，而Rust 实现的 LeetCode 仓库则提供了 Rust 版本的解答。通过解决这些问题，能够锻炼 Rust 编程能力，并加深对算法的理解。作者对与Hard 模式的问题，题哦那个中文思路注释。
+
 
