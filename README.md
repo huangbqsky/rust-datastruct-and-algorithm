@@ -33,7 +33,7 @@ Rust教程：<<Rust 程序设计语言>> https://kaisery.github.io/trpl-zh-cn/ti
 
 RustBook：<<Rust数据结构与算法>> https://github.com/QMHTMY/RustBook/tree/main/books
 
-Rust算法：《The Algorithms - Rust》 https://github.com/TheAlgorithms/Rust
+Rust算法：<<The Algorithms - Rust>> https://github.com/TheAlgorithms/Rust
 
 Rust题解：<<Rust算法题解>> https://github.com/rustlang-cn/rust-algos 涵盖了各种常用算法和数据结构的代码实现，以及 leetcode 题解，同时对于相关算法还提供了中文文档和注释
 
@@ -43,6 +43,6 @@ Rust算法（小争哥） ：https://github.com/wangzheng0822/algo 数据结构�
 
 LeetCode in Rust：https://github.com/aylei/leetcode-rust 在 LeetCode 上有很多算法问题，而Rust 实现的 LeetCode 仓库则提供了 Rust 版本的解答。通过解决这些问题，能够锻炼 Rust 编程能力，并加深对算法的理解。作者对与Hard 模式的问题，题哦那个中文思路注释。
 
-hello-algo（《Hello 算法》）：https://github.com/krahets/hello-algo ：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。
+hello-algo（<<Hello 算法>>）：https://github.com/krahets/hello-algo ：动画图解、一键运行的数据结构与算法教程，支持 Java, C++, Python, Go, JS, TS, C#, Swift, Rust, Dart, Zig 等语言。
 
 
